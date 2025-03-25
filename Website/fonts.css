@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Edu+SA+Beginner:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-edu-sa: "Edu SA Beginner", cursive;
+  --font-mono: "Roboto Mono", monospace;
+}
+
+
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-edu-sa {
+  font-family: var(--font-edu-sa);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}

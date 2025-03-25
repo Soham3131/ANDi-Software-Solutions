@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <style>
+      
+        
+
+        /* Card Styling */
+        .card {
+            background: #FAFAFA;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            transition: 0.3s;
+            width: 100%; /* Uniform width */
+            height: 400px;
+            /* Fixed height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom:20px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Image Styling */
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        /* Button Styling */
+        .btn-learn {
+            color: #1C4670;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: auto;
+        }
+
+        .btn-learn:hover {
+            color: #FF9C00;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <!-- Services Section -->
+     <div class="bg-richblack-900">
+    <div class="container  py-5">
+        <div class="text-center">
+            <p class="text-warning text-uppercase">Welcome to Our Services</p>
+            <h2 class="fw-bold text-white">Explore Our Services</h2>
+        </div>
+
+        <!-- Service Cards -->
+        <div class="row mt-4 g-4">
+            <script>
+                const services = [
+                    { title: "Responsive Website Development", desc: "We develop all types of websites using creative ideas and the latest technology.", img: "https://miro.medium.com/v2/resize:fit:1200/0*M4bxiCIjcTK-2Xr6.jpeg" },
+                    { title: "Software Development", desc: "We develop customized software as per the user needs.", img: "https://blog.planview.com/wp-content/uploads/2020/01/Top-6-Software-Development-Methodologies.jpg" },
+                    { title: "Mobile App Development", desc: "We develop Android and iOS applications tailored for your business.", img: "https://media.licdn.com/dms/image/v2/D5612AQExT0O9xOCVhA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1711974550479?e=2147483647&v=beta&t=5o7r9HMEnakAj9jtnkq5Gb3ju3bJtxNdzWTyzPI1AiU" },
+                    { title: "Bulk SMS", desc: "Try our instant setup API Gateway for Promotional and Transactional SMS.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZkyudC6GzCezfCpEVzslpjFA3fqH4Chp3yw&s" },
+                    { title: "Toll-Free Number", desc: "Encourage more customers to connect with you using our premium Toll-Free Number service.", img: "https://exotel.com/wp-content/uploads/2024/03/what-is-a-toll-free-number.jpg" },
+                    { title: "Short Code Service", desc: "Short digit sequences for easy multimedia messaging services.", img: "https://img2.exportersindia.com/product_images/bc-full/dir_127/3780024/short-code-services-2124081.jpeg" },
+                    { title: "Missed Call Service", desc: "Reliable missed call alerts at an economic price.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRzK-fAMQeuaeq1i1EP2_SzfhFbamNeYPcnA&s" },
+                    { title: "WhatsApp Promotion Panel", desc: "Contact your customers easily using our WhatsApp Business Panel.", img: "https://www.webxion.com/img/whatsapp-marketing-service.jpg" },
+                    { title: "Animation Clips", desc: "We create 2D/3D animations for business promotions.", img: "https://5.imimg.com/data5/SELLER/Default/2024/12/470527567/DK/XV/HA/7310661/2d-animation-service-500x500.jpg" }
+                ];
+
+                document.write('<div class="row">');
+                services.forEach(service => {
+                    document.write(`
+                        <div class="col-md-4 d-flex">
+                            <div class="card p-3">
+                                <img src="${service.img}" alt="${service.title}">
+                                <h5 class="fw-bold mt-3">${service.title}</h5>
+                                <p class="text-muted">${service.desc}</p>
+                                <a href="#" class="btn-learn">Learn More →</a>
+                            </div>
+                        </div>
+                    `);
+                });
+                document.write('</div>');
+            </script>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

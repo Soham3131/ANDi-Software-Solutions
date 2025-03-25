@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #212529;
+            padding: 15px 20px;
+            z-index: 1000; /* Makes sure navbar is always on top */
+            position: relative;
+        }
+
+        .navbar-brand img {
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .navbar-brand span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        /* Navbar Links */
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: yellow !important;
+        }
+
+        /* Hamburger Menu (Fixing Double Icon Issue) */
+        .navbar-toggler {
+            border: none;
+            outline: none;
+            background: none;
+            padding: 5px;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .navbar-toggler-icon {
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        /* Ensure Navbar Dropdown is Over Content */
+        .navbar-collapse {
+            background: #212529;
+            padding: 10px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensures it is above images */
+        }
+
+        /* Dropdown Animation */
+        .collapse.show {
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Prevent Scaling Issues */
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 992px) {
+            .navbar-collapse {
+                position: static;
+                background: transparent;
+                width: auto;
+            }
+
+            .navbar-nav {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <!-- Logo & Brand -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://www.andisoftwaresolutions.com/1_files/logo.jpg" alt="Logo">
+                <span>ANDi Software Solutions</span>
+            </a>
+
+            <!-- Hamburger Button (Fixed) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span> <!-- FIXED: Removed extra icon -->
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="./home.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./products.html" class="nav-link">Products & Services</a></li>
+                    <li class="nav-item"><a href="./digitalmarketing.html" class="nav-link">Digital Marketing</a></li>
+                    <li class="nav-item"><a href="./cloud.html" class="nav-link">Cloud Software</a></li>
+                    <li class="nav-item"><a href="./clients.html" class="nav-link">Our Clients</a></li>
+                    <li class="nav-item"><a href="./partners.html" class="nav-link">Our Partners</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

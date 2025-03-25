@@ -1,0 +1,132 @@
+/* ================== Root Variables ================== */
+:root {
+    /* Base Colors */
+    --white: #fff;
+    --black: #000;
+    --transparent: #ffffff00;
+
+    /* Rich Black */
+    --richblack-5: #F1F2FF;
+    --richblack-25: #DBDDEA;
+    --richblack-50: #C5C7D4;
+    --richblack-100: #AFB2BF;
+    --richblack-200: #999DAA;
+    --richblack-300: #838894;
+    --richblack-400: #6E727F;
+    --richblack-500: #585D69;
+    --richblack-600: #424854;
+    --richblack-700: #2C333F;
+    --richblack-800: #161D29;
+    --richblack-900: #000814;
+
+    /* Rich Blue */
+    --richblue-5: #ECF5FF;
+    --richblue-25: #C6D6E1;
+    --richblue-50: #A0B7C3;
+    --richblue-100: #7A98A6;
+    --richblue-200: #537988;
+    --richblue-300: #2D5A6A;
+    --richblue-400: #073B4C;
+    --richblue-500: #063544;
+    --richblue-600: #042E3B;
+    --richblue-700: #032833;
+    --richblue-800: #01212A;
+    --richblue-900: #001B22;
+
+    /* Blue */
+    --blue-5: #EAF5FF;
+    --blue-25: #B4DAEC;
+    --blue-50: #7EC0D9;
+    --blue-100: #47A5C5;
+    --blue-200: #118AB2;
+    --blue-300: #0F7A9D;
+    --blue-400: #0C6A87;
+    --blue-500: #0A5A72;
+    --blue-600: #074B5D;
+    --blue-700: #053B48;
+    --blue-800: #022B32;
+    --blue-900: #001B1D;
+}
+
+/* ================== Utility Classes ================== */
+
+/* Background Colors */
+.bg-richblack-5 { background-color: var(--richblack-5) !important; }
+.bg-richblack-25 { background-color: var(--richblack-25) !important; }
+.bg-richblack-50 { background-color: var(--richblack-50) !important; }
+.bg-richblack-100 { background-color: var(--richblack-100) !important; }
+.bg-richblack-200 { background-color: var(--richblack-200) !important; }
+.bg-richblack-300 { background-color: var(--richblack-300) !important; }
+.bg-richblack-400 { background-color: var(--richblack-400) !important; }
+.bg-richblack-500 { background-color: var(--richblack-500) !important; }
+.bg-richblack-600 { background-color: var(--richblack-600) !important; }
+.bg-richblack-700 { background-color: var(--richblack-700) !important; }
+.bg-richblack-800 { background-color: var(--richblack-800) !important; }
+.bg-richblack-900 { background-color: var(--richblack-900) !important; }
+
+.bg-richblue-800 { background-color: var(--richblue-800) !important; }
+.bg-blue-200 { background-color: var(--blue-200) !important; }
+
+/* Text Colors */
+.text-richblack-800 { color: var(--richblack-800) !important; }
+.text-richblue-800 { color: var(--richblue-800) !important; }
+.text-blue-200 { color: var(--blue-200) !important; }
+
+/* Primary Utility Classes */
+.bg-primary { background-color: var(--blue-200) !important; }
+.text-primary { color: var(--blue-200) !important; }
+
+/* ================== Layout & Styling ================== */
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* When active, change text color to yellow */
+.nav-link.active {
+    color: yellow !important;
+}
+
+
+/* buttonm */
+/* Base Button Styling */
+.custom-button {
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Default Button */
+.custom-button {
+    background-color: #161D29; /* richblack-800 */
+    color: white;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Active (Yellow) State */
+.custom-button.active {
+    background-color: #FFD60A; /* yellow-50 */
+    color: black;
+}
+
+/* Hover Effect */
+.custom-button:hover {
+    transform: scale(0.95);
+}
+.products {
+    background-color: #0A192F; /* Deep Blue Background */
+    color: white;
+}

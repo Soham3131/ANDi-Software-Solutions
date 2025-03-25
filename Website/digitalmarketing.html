@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Services - NDI Software Solutions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+    <style>
+        /* Background Color - Ensures Full Coverage */
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #0A192F; /* Deep Blue */
+            color: white;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        /* Full Background */
+        .bg-richblack-800 {
+            background-color: #0A192F;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+
+        /* Flexbox Container */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        /* Left Side: Text */
+        .text-section {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        /* White Text for Services */
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content ul li {
+            color: white;
+            font-size: 1.1rem;
+            margin: 8px 0;
+        }
+
+        /* Right Side: GIF */
+        .gif-container {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Contact Button */
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn-contact {
+            background-color: yellow;
+            color: black;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0px 4px 10px rgba(255, 255, 0, 0.7);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-contact:hover {
+            background-color: #FFD700;
+            box-shadow: 0px 6px 15px rgba(255, 255, 0, 1);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<div class="bg-richblack-800">
+    <div class="container">
+        <!-- Left: Text Content -->
+        <div class="text-section">
+            <h1 class="title text-white">Digital Marketing Services</h1>
+            <p class="content text-white">
+                At <b>NDI Software Solutions</b>, we specialize in comprehensive digital marketing services to help 
+                businesses boost their online presence and maximize growth.  
+                Our services include:
+            </p>
+            <ul class="text-white">
+                <li>✔ Social Media Marketing</li>
+                <li>✔ Search Engine Optimization (SEO)</li>
+                <li>✔ Pay-Per-Click (PPC) Advertising</li>
+                <li>✔ Content Marketing & Strategy</li>
+                <li>✔ Email & SMS Marketing</li>
+                <li>✔ Brand Awareness & Growth Campaigns</li>
+            </ul>
+        </div>
+
+        <!-- Right: GIF -->
+        <div class="gif-container">
+            <img src="https://gladiasconsulting.com/wp-content/uploads/2019/12/social-Media-Marketing.gif" 
+                 alt="Digital Marketing GIF">
+        </div>
+    </div>
+
+    <!-- Contact Button -->
+    <div class="button-container">
+        <a href="./contact.html" class="btn-contact">Contact Us</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
