@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="fonts.css">
     <style>
         /* Full-page background */
-        body {
+        html,body {
             background-color: var(--richblack-900);
             color: white;
+            overflow-x: hidden;
+            width: 100%;
+
         }
 
         /* Button Styling */
@@ -43,6 +46,39 @@
             max-width: 800px;
             margin: auto;
         }
+         
+        /* Move slider buttons outside */
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto; /* Reduce button width */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+    padding: 15px; /* Make buttons larger */
+    border-radius: 50%;
+}
+
+/* Move the buttons outside the container */
+.carousel-control-prev {
+    left: -50px; /* Adjust to move further left */
+}
+
+.carousel-control-next {
+    right: -50px; /* Adjust to move further right */
+}
+
+/* On smaller screens, prevent them from going too far */
+@media (max-width: 768px) {
+    .carousel-control-prev {
+        left: -30px; /* Less offset for small screens */
+    }
+    .carousel-control-next {
+        right: -30px;
+    }
+}
 
         /* Make Images Uniform */
         .carousel-inner {
@@ -57,6 +93,20 @@
             object-fit: contain;
             border-radius: 10px;
         }
+        @media (max-width: 992px) {
+    .custom-button{
+        margin-bottom: 15px
+    }
+    .btn-outline-light {
+        margin-bottom: 8px !important; /* Adds space above the buttons */
+    }
+
+    .col-lg-6 img {
+        margin-bottom: 20px; /* Adds space below images */
+    }
+}
+
+
     </style>
 </head>
 <body>
@@ -92,8 +142,8 @@
             <div class="col-lg-6">
                 <h2 class="fw-bold">Unlock your <span class="text-warning">Website Potential</span> with our Services</h2>
                 <p>Our services are managed and done by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you.</p>
-                <a href="./products.html" class="custom-button">Try it Yourself</a>
-                <a href="./partners.html" class="btn btn-outline-light ms-3">Learn More</a>
+                <a href="./products.html" class="custom-button ">Try it Yourself</a>
+                <a href="./partners.html" class="btn btn-outline-light ms-3 ">Learn More</a>
             </div>
             <div class="col-lg-6">
                 <img src="/images/image1.jpg" class="w-100 rounded" alt="Coding Course">

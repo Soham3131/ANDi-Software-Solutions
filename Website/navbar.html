@@ -17,7 +17,7 @@
         .navbar {
             background-color: #212529;
             padding: 15px 20px;
-            z-index: 1000; /* Makes sure navbar is always on top */
+            z-index: 1000;
             position: relative;
         }
 
@@ -29,9 +29,17 @@
 
         .navbar-brand span {
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.5rem; /* Default size */
             font-weight: bold;
             margin-left: 10px;
+            white-space: nowrap; /* Prevents text from breaking */
+        }
+
+        /* Reduce text size for mobile view */
+        @media (max-width: 576px) {
+            .navbar-brand span {
+                font-size: 1rem; /* Reduce font size on small screens */
+            }
         }
 
         /* Navbar Links */
@@ -45,7 +53,7 @@
             color: yellow !important;
         }
 
-        /* Hamburger Menu (Fixing Double Icon Issue) */
+        /* Hamburger Menu */
         .navbar-toggler {
             border: none;
             outline: none;
@@ -70,7 +78,7 @@
             top: 100%;
             left: 0;
             width: 100%;
-            z-index: 1000; /* Ensures it is above images */
+            z-index: 1000;
         }
 
         /* Dropdown Animation */
@@ -116,16 +124,15 @@
             <!-- Logo & Brand -->
             <a class="navbar-brand d-flex align-items-center" href="/index.html">
                 <img src="https://www.andisoftwaresolutions.com/1_files/logo.jpg" 
-     alt="Logo" 
-     class="img-fluid" 
-     style="max-width: 150px; height: auto;">
-
+                     alt="Logo" 
+                     class="img-fluid" 
+                     style="max-width: 150px; height: auto;">
                 <span>ANDi Software Solutions</span>
             </a>
 
-            <!-- Hamburger Button (Fixed) -->
+            <!-- Hamburger Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span> <!-- FIXED: Removed extra icon -->
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Navbar Links -->
