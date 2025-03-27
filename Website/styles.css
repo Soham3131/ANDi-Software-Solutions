@@ -48,7 +48,6 @@
     --blue-900: #001B1D;
 }
 
-/* ================== Utility Classes ================== */
 
 /* Background Colors */
 .bg-richblack-5 { background-color: var(--richblack-5) !important; }
@@ -72,11 +71,11 @@
 .text-richblue-800 { color: var(--richblue-800) !important; }
 .text-blue-200 { color: var(--blue-200) !important; }
 
-/* Primary Utility Classes */
+
 .bg-primary { background-color: var(--blue-200) !important; }
 .text-primary { color: var(--blue-200) !important; }
 
-/* ================== Layout & Styling ================== */
+
 
 /* Navbar */
 .navbar {
@@ -97,7 +96,7 @@
 
 
 /* buttonm */
-/* Base Button Styling */
+/* Base Button */
 .custom-button {
     display: inline-block;
     text-align: center;
@@ -111,22 +110,22 @@
 
 /* Default Button */
 .custom-button {
-    background-color: #161D29; /* richblack-800 */
+    background-color: #161D29; 
     color: white;
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
 }
 
-/* Active (Yellow) State */
+
 .custom-button.active {
-    background-color: #FFD60A; /* yellow-50 */
+    background-color: #FFD60A; 
     color: black;
 }
 
-/* Hover Effect */
+
 .custom-button:hover {
     transform: scale(0.95);
 }
 .products {
-    background-color: #0A192F; /* Deep Blue Background */
+    background-color: #0A192F; /* Deep Blue  */
     color: white;
 }
